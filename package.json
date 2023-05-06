@@ -1,0 +1,36 @@
+{
+  "name": "ruhaste",
+  "version": "1.0.0",
+  "description": "Haste client for hastebin.ru and bin.xorek.net",
+  "main": "src/ruhaste.js",
+  "typings": "./index.d.ts",
+  "bin": {
+    "ruhaste": "./src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpkgsoft/ruhaste.git"
+  },
+  "author": "DpkgSoft Computers LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpkgsoft/ruhaste/issues"
+  },
+  "homepage": "https://github.com/dpkgsoft/ruhaste#readme",
+  "dependencies": {
+    "get-stream": "^5.1.0",
+    "got": "^5.3.0",
+    "yargs": "1.3.2"
+  },
+  "devDependencies": {
+    "@types/got": "^9.6.7",
+    "get-stdin": "^5.0.1",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && echo 'test' | node src/cli.js | node test/test.js",
+    "prepublish": "npm test",
+    "fix": "standard --fix"
+  }
+}
