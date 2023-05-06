@@ -29,8 +29,6 @@
   },
   "scripts": {
     "lint": "standard",
-    "test": "npm run lint && echo 'test' | node src/cli.js | node test/test.js",
-    "prepublish": "npm test",
     "fix": "standard --fix"
   }
 }
