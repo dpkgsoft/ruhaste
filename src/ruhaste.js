@@ -34,3 +34,5 @@ function createPaste(content, options, gotOptions) {
     }
   });
 }
+
+exports.createPaste = createPaste;

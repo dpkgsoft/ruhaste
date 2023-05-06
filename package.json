@@ -1,6 +1,6 @@
 {
   "name": "ruhaste",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Haste client for hastebin.ru and bin.xorek.net",
   "main": "src/ruhaste.js",
   "typings": "./index.d.ts",
